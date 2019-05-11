@@ -62,18 +62,7 @@ class Task():
         else: # the quad is not near enough to the goal therefore it should be moving
             # reward based solely on distance at this point
             reward = -1.0 * distance
-        
-        ## Case: Agent is closer to the target & should stay stationary but still flying
-        '''if (err <= .1):
-            if (
-            reward = 10
-            
-        elif (err <= 0.1)
-            reward = 100
-        else:
-           ## Case: Agent is far away from the target and we penalize it proportionally to the error of the distance ##
-            reward = -1.0*err
-            #reward = 1.-.3*(abs(self.sim.pose[:3] - self.target_pos)).sum()'''
+      
 
         return reward
 
